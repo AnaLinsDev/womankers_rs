@@ -1,0 +1,60 @@
+#root {
+  width: 100vw;
+}
+
+
+.home_component {
+  min-height: 30vh;
+  width: calc(100% - 40px);
+  padding: 20px;
+}
+
+
+.yellow {
+  background-color: #216ce52f;
+}
+
+.mw-400 {
+  margin: 10px auto;
+  max-width: 400px;
+}
+
+.mw-800 {
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.mx-50 {
+  margin: 0px 50px;
+}
+
+.register_card {
+  text-align: center;
+}
+
+.m-20 {
+  margin: 20px 0px;
+}
+
+.carrousel {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex{
+  display: flex;
+}
+
+.carrousel_item {
+  margin: 20px 20px;
+  width: 300px !important;
+  height: 350px !important;
+}
+
+.carrousel_image{
+  height: 290px;
+}
