@@ -2,6 +2,13 @@
   width: 100vw;
 }
 
+.App {
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+}
 
 .home_component {
   min-height: 30vh;
@@ -57,4 +64,12 @@
 
 .carrousel_image{
   height: 290px;
+}
+
+.white_text {
+  color: whitesmoke !important;
+}
+
+.spacer {
+  margin: 0px auto;
 }

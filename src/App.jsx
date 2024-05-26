@@ -1,19 +1,27 @@
-import './App.css'
-import InfoComponent from'./components/InfoComponent/index'
-import RegisterComponent from'./components/RegisterComponent/index'
-import TeamComponent from'./components/TeamComponent/index'
+import "./App.css";
+
+import Home from "./pages/Home/index";
+import Guide from "./pages/Guide/index";
+import Dashboard from "./pages/Dashboard/index";
+import MenuComponent from "./components/MenuComponent/index"
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-
   return (
-    <>
-      <RegisterComponent />
-
-      <InfoComponent />
-
-      <TeamComponent />
-    </>
-  )
+    <Router>
+      <div className="App">
+        <MenuComponent />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/guide" element={<Guide />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;

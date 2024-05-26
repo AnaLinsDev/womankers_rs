@@ -1,7 +1,7 @@
-import "../../App.css";
+import "../../../App.css";
 import Avatar from "@mui/material/Avatar";
 
-import teamImage from "../../assets/team_image.png";
+import teamImage from "../../../assets/team_image.png";
 
 export default function TeamComponent() {
   
@@ -9,7 +9,6 @@ export default function TeamComponent() {
 
   function getWindowMobile() {
     const width = hasWindow ? window.innerWidth : null;
-    console.log("width: " + width)
     return width < 620
   }
 
