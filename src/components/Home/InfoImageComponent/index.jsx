@@ -20,9 +20,9 @@ export default function InfoImageComponent({ title }) {
 
   return (
     <Link to={title == "Guide" ? ENUM_PAGES.GUIDE : ENUM_PAGES.DASHBOARD}>
-    <Card  className='carrousel_item'>
+    <Card  className='flex_wrap_item'>
       <CardMedia
-        className="carrousel_image"
+        className="flex_wrap_image"
         image={title == "Guide" ? guideImage : dashboardImage}
         title="green iguana"
       />

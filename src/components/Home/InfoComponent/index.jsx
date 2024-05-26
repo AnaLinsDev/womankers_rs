@@ -4,7 +4,7 @@ import InfoImageComponent from "../InfoImageComponent/index"
 
 export default function InfoComponent() {
   return (
-    <div className="home_component yellow ">
+    <div className="home_component blue ">
       <div className="mw-800 justify-text">
         <h3>Informe-se</h3>
 
@@ -13,7 +13,7 @@ export default function InfoComponent() {
           tempo e outro
         </p>
 
-        <div className="carrousel">
+        <div className="flex_wrap">
 
           <InfoImageComponent title="Dashboard" image="'../../assets/dashboard_image.png'" />
           <InfoImageComponent title="Guide" image="'../../assets/guide_image.png'" />

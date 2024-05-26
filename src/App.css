@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poetsen+One&display=swap');
+
 #root {
   width: 100vw;
 }
 
+.new_font {
+  font-family: "Poetsen One", sans-serif !important;
+  font-style: normal;
+}
+
 .App {
   min-height: 100vh;
+  color: #303c31;
 }
 
 .title {
@@ -17,8 +25,12 @@
 }
 
 
-.yellow {
+.blue {
   background-color: #216ce52f;
+}
+
+.menu {
+  background-color: #396BBB !important;
 }
 
 .mw-400 {
@@ -31,8 +43,28 @@
   max-width: 800px;
 }
 
+p {
+  font-weight: 10px !important;
+}
+
 .justify-text {
   text-align: justify;
+}
+
+.title_guide {
+  margin-top: 40px;
+  color: #396BBB !important;
+}
+
+.guide_divisor {
+  margin: 80px 0;
+}
+
+.guide_content {
+  border-radius: 60px;
+  padding: 20px;
+  color: #30343C;
+  margin-bottom: 10vh;
 }
 
 .mx-50 {
@@ -47,22 +79,24 @@
   margin: 20px 0px;
 }
 
-.carrousel {
+.flex_wrap {
   display: flex;
   flex-wrap: wrap;
+
+  justify-content: center;
 }
 
 .flex{
   display: flex;
 }
 
-.carrousel_item {
+.flex_wrap_item {
   margin: 20px 20px;
   width: 300px !important;
   height: 350px !important;
 }
 
-.carrousel_image{
+.flex_wrap_image{
   height: 290px;
 }
 
@@ -72,4 +106,12 @@
 
 .spacer {
   margin: 0px auto;
+}
+
+.ma-40 {
+  margin: 40px;
+}
+
+.ma-20 {
+  margin: 20px;
 }
