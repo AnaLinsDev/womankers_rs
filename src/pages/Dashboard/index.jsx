@@ -1,36 +1,54 @@
-import Card from "../../components/Dashboard/CardComponent/index";
+import CardComponent from "../../components/Dashboard/CardComponent/index";
+
+import cities from "./cities";
+
+import axios from "axios";
 
 export default function Dashboard() {
+  /*
+  const [loading, setLoading] = useState([]);
+  const [citiesPlaceholder, setCitiesPlaceholder] = useState([]);
 
-  const hasWindow = typeof window !== 'undefined';
+  async function getCities(e) {
+    setLoading(true);
 
-  function getMinWifht() {
-    const width = hasWindow ? window.innerWidth : null;
-    return width < 620 ? 400 : 200
+    e.preventDefault();
+
+    try {
+
+      const response = await axios({
+        url: `xxx`,
+        method: "get",
+      });
+
+      setCitiesPlaceholder(response);
+
+    } catch (error) {
+
+      console.log(error);
+      
+      setCitiesPlaceholder([]);
+
+    }
+
+    setLoading(false);
   }
+  */
 
   return (
     <div>
-      <h2 className="title">Dashboard</h2>
+      <h2 className="title">Cidades</h2>
 
       <div className="flex_wrap ma-40 center">
-        <Card width={400} height={200}></Card>
-
-        <Card width={400} height={200}></Card>
-
-        <Card width={getMinWifht()} height={200}></Card>
-
-        <Card width={getMinWifht()} height={200}></Card>
-
-        <Card width={400} height={200}></Card>
-
-        <Card width={400} height={200}></Card>
-
-        <Card width={400} height={200}></Card>
-
-        <Card width={400} height={200}></Card>
-
-        <Card width={getMinWifht()} height={200}></Card>
+        {cities.map((currCity) => (
+          <CardComponent
+            key={currCity.city}
+            width={300}
+            height={300}
+            currCity={[currCity]}
+            riskLevel={currCity.stats.risk_level}
+          ></CardComponent>
+        ))}
       </div>
     </div>
   );

@@ -15,8 +15,8 @@ export default function InfoComponent() {
 
         <div className="flex_wrap">
 
-          <InfoImageComponent title="Dashboard" image="'../../assets/dashboard_image.png'" />
-          <InfoImageComponent title="Guide" image="'../../assets/guide_image.png'" />
+          <InfoImageComponent title="Cidades" image="'../../assets/dashboard_image.png'" />
+          <InfoImageComponent title="Guia" image="'../../assets/guide_image.png'" />
 
         </div>
       </div>

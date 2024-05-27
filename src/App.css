@@ -24,6 +24,10 @@
   padding: 20px;
 }
 
+.perc_100 {
+  width: 100% !important;
+}
+
 
 .blue {
   background-color: #216ce52f;
@@ -114,4 +118,19 @@ p {
 
 .ma-20 {
   margin: 20px;
+}
+
+.risk_attention {
+  background-color: #fbff2a;
+}
+
+.risk_danger {
+  background-color: #ff5757;
+}
+
+.risk_card {
+  border: 1px solid rgba(23, 23, 23, 0.858);
+  padding: 5px 20px;
+  border-radius: 10px;
+  max-height: 24px;
 }

@@ -14,16 +14,16 @@ import { Link } from "react-router-dom";
 export default function InfoImageComponent({ title }) {
 
   const ENUM_PAGES = {
-    "GUIDE": "/guide",
-    "DASHBOARD": "/dashboard"
+    "GUIDE": "/guia",
+    "DASHBOARD": "/cidades"
   }
 
   return (
-    <Link to={title == "Guide" ? ENUM_PAGES.GUIDE : ENUM_PAGES.DASHBOARD}>
+    <Link to={title == "Guia" ? ENUM_PAGES.GUIDE : ENUM_PAGES.DASHBOARD}>
     <Card  className='flex_wrap_item'>
       <CardMedia
         className="flex_wrap_image"
-        image={title == "Guide" ? guideImage : dashboardImage}
+        image={title == "Guia" ? guideImage : dashboardImage}
         title="green iguana"
       />
       <CardContent>

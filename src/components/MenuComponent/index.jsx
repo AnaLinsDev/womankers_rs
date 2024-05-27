@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 export default function MenuComponent() {
   const ENUM_PAGES = {
     HOME: "/",
-    GUIDE: "/guide",
-    DASHBOARD: "/dashboard",
+    GUIDE: "/guia",
+    DASHBOARD: "/cidades",
   };
 
   return (
@@ -25,13 +25,13 @@ export default function MenuComponent() {
 
           <Link to={ENUM_PAGES.GUIDE}>
             <p color="inherit" className="white_text new_font mx-50">
-              Guide
+              Guia
             </p>
           </Link>
 
           <Link to={ENUM_PAGES.DASHBOARD}>
             <p color="inherit" className="white_text new_font">
-              Dashboard
+              Cidades
             </p>
           </Link>
         </Toolbar>
