@@ -53,9 +53,7 @@ export default function RegisterComponent() {
           <h3>Inscreva-se e fique alerta!</h3>
 
           <TextField
-            fullWidth
             error={showErrorEmail}
-            id="email_input"
             label="Email"
             variant="outlined"
             onChange={handleChangeEmail}
@@ -63,10 +61,9 @@ export default function RegisterComponent() {
 
           <div className="m-20" />
 
-          <FormControl fullWidth>
+          <FormControl className="state_select">
             <InputLabel id="state_input">Estado</InputLabel>
             <Select
-              id="state_select"
               value={state}
               label="Estado"
               onChange={handleChangeState}

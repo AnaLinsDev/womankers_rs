@@ -2,8 +2,7 @@ import Card from "@mui/material/Card";
 
 // eslint-disable-next-line react/prop-types
 export default function CardComponent({ width, height, currCity, riskLevel }) {
-
-  const attention = "ATENÇÃO"
+  const attention = "SEGURO";
 
   return (
     <Card
@@ -24,14 +23,14 @@ export default function CardComponent({ width, height, currCity, riskLevel }) {
 
               <p
                 className={
-                  riskLevel == attention ? "risk_attention risk_card" : "risk_danger risk_card"
+                  riskLevel == attention
+                    ? "risk_attention risk_card"
+                    : "risk_danger risk_card"
                 }
               >
                 {home.stats.risk_level}
               </p>
             </div>
-
-            <p>Precipitação: {home.stats.precipitation.toFixed(2)}</p>
 
             <p>Temperatura mín : {home.stats.temperature_min}</p>
 
@@ -39,7 +38,12 @@ export default function CardComponent({ width, height, currCity, riskLevel }) {
 
             <p>Velocidade máx do vento : {home.stats.wind_speed_max}</p>
 
-            <p>Umidade máx : {home.stats.humidity_max}</p>
+            {home.stats.reasons && home.stats.reasons.length > 0 ? (
+              <p>Razões : {home.stats?.reasons[0]}</p>
+            ) : (
+              <p></p>
+            )}
+            
           </span>
         ))}
       </div>
